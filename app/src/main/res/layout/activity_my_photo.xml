@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImageListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/personal_page_background">
+
+        <TextView
+            android:id="@+id/curr_user"
+            android:background="@drawable/selector_getverif"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="10dp"/>
+
+        <ImageButton
+            android:id="@+id/add_photo"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_getverif"
+            app:srcCompat="@mipmap/ic_add"/>
+        <ImageButton
+            android:id="@+id/refresh_photo"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_getverif"
+            app:srcCompat="@mipmap/ic_refresh"/>
+        <ImageButton
+            android:id="@+id/login_out"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_getverif"
+            app:srcCompat="@mipmap/ic_logout"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/result_callback"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myPhotoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

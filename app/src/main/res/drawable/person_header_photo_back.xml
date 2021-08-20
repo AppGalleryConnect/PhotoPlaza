@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:useLevel="false"
+    android:innerRadius="30dp"
+    android:thickness="5dp">
+
+    <gradient android:type="radial"
+        android:gradientRadius="300"
+        android:centerY="0.2"
+        android:centerX="0.4"
+        android:startColor="@android:color/transparent"
+        android:centerColor="@color/colorNormalBule"
+        android:endColor="@color/colorEmuiBule" />
+
+    <size android:width="90dp"
+        android:height="90dp" />
+
+</shape>

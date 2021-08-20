@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PhotoPlaza</string>
+    <string name="comment_total">Total %1$d comments</string>
+    <string name="pic_upload_time">Upload Time: </string>
+    <string name="hot_comments">Hot Comments</string>
+    <string name="pic_upload_user">User name</string>
+    <string name="post_comments">Post</string>
+    <string name="add_comment_hint">add a comment...</string>
+    <string name="pic_detail_string">Image details</string>
+    <string name="personal_pho">Total %1$d photos</string>
+    <string name="agc_user">User_ID</string>
+    <string name="anonymous_user">Anonymous_ID</string>
+    <string name="edit_account">Enter Phone or Email </string>
+    <string name="edit_password">Enter Your Password</string>
+    <string name="welcom_text">Welcome to Register</string>
+    <string name="edit_verif">Verif Code</string>
+    <string name="obtion_verif">Obtaining</string>
+    <string name="login_account">Login</string>
+    <string name="login_anonymous">Anonymous_Login</string>
+    <string name="account_register">Register</string>
+    <string name="personal_tip">Nobody could ever replace you</string>
+    <string name="login_success">Login Success</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="delete_success">Delete Success</string>
+    <string name="loading_photo">Photo Loading...</string>
+    <string name="loading_comment">Comment Loading...</string>
+    <string name="loading_photo_failed">Photo Loading Failed </string>
+    <string name="loading_comment_failed">Comment Loading Filed </string>
+    <string name="uploading_photo">Photo Uploading</string>
+    <string name="comment_success">Comments published successfully</string>
+    <string name="reLogin">Please login before commenting</string>
+    <string name="account_error">Account or Password Error, Please Confirm</string>
+    <string name="register_error">RegisterFailed</string>
+    <string name="empty_error">Please fill in the information</string>
+    <string name="exit_app">Press again to exit the App</string>
+
+</resources>

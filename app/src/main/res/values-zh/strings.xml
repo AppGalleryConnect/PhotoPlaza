@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PhotoPlaza</string>
+    <string name="comment_total">共 %1$d 条评论</string>
+    <string name="hot_comments">热门评论</string>
+    <string name="pic_upload_time">上传时间：</string>
+    <string name="pic_upload_user">用户名</string>
+    <string name="add_comment_hint">写评论...</string>
+    <string name="pic_detail_string">图片详情</string>
+    <string name="post_comments">发布</string>
+    <string name="personal_pho">共 %1$d 张照片</string>
+    <string name="agc_user">认证用户_ID</string>
+    <string name="anonymous_user">匿名用户_ID</string>
+    <string name="edit_account">请输入手机或邮箱</string>
+    <string name="edit_password">请输入密码</string>
+    <string name="welcom_text">欢迎来注册</string>
+    <string name="edit_verif">请输入验证码</string>
+    <string name="obtion_verif">发送验证码</string>
+    <string name="login_account">登录</string>
+    <string name="login_anonymous">匿名登录</string>
+    <string name="account_register">注册新用户</string>
+    <string name="personal_tip">Nobody could ever replace you</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="loading_photo">图片加载中...</string>
+    <string name="loading_comment">评论加载中...</string>
+    <string name="loading_photo_failed">图片加载失败 </string>
+    <string name="loading_comment_failed">评论加载失败 </string>
+    <string name="uploading_photo">图片上传中...</string>
+    <string name="comment_success">评论发表成功 </string>
+    <string name="reLogin">请返回首页登录后再评论</string>
+    <string name="account_error">账号或密码错误，请重试</string>
+    <string name="register_error">注册失败</string>
+    <string name="empty_error">请先输入账号信息</string>
+    <string name="exit_app">再按一次退出应用</string>
+
+</resources>
