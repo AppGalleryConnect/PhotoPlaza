@@ -1,70 +1,74 @@
 {
 	"agcgw":{
-		"backurl":"connect-dra.dbankcloud.cn",
-		"url":"connect-dra.hispace.hicloud.com",
-		"websocketbackurl":"connect-ws-dra.hispace.dbankcloud.cn",
-		"websocketurl":"connect-ws-dra.hispace.dbankcloud.com"
+		"backurl":"connect-drcn.hispace.hicloud.com",
+		"url":"connect-drcn.dbankcloud.cn",
+		"websocketbackurl":"connect-ws-drcn.hispace.dbankcloud.com",
+		"websocketurl":"connect-ws-drcn.hispace.dbankcloud.cn"
 	},
 	"agcgw_all":{
-		"CN":"connect-drcn.hispace.hicloud.com",
-		"CN_back":"connect-drcn.dbankcloud.cn",
-		"DE":"connect-dre.hispace.hicloud.com",
-		"DE_back":"connect-dre.dbankcloud.cn",
-		"RU":"connect-drru.hispace.hicloud.com",
-		"RU_back":"connect-drru.dbankcloud.cn",
-		"SG":"connect-dra.hispace.hicloud.com",
-		"SG_back":"connect-dra.dbankcloud.cn"
+		"CN":"connect-drcn.dbankcloud.cn",
+		"CN_back":"connect-drcn.hispace.hicloud.com",
+		"DE":"connect-dre.dbankcloud.cn",
+		"DE_back":"connect-dre.hispace.hicloud.com",
+		"RU":"connect-drru.dbankcloud.cn",
+		"RU_back":"connect-drru.hispace.hicloud.com",
+		"SG":"connect-dra.dbankcloud.cn",
+		"SG_back":"connect-dra.hispace.hicloud.com"
 	},
 	"client":{
-		"cp_id":"70086000307982044",
-		"product_id":"736430079245942229",
-		"client_id":"695356640018318400",
-		"client_secret":"2B12D0EF2B9C26C29E07A04107915A38EDC00D55094E4AE9F82DCC4616AE028A",
-		"project_id":"736430079245942229",
-		"app_id":"104635315",
-		"api_key":"CwEAAAAA9FhthryrOhh88onTkjiSH95dwm7gdGts7GLpBXkCxWBOvXaeUgm//8/H/5y10gu8E1zTpn6t8zrKH2PS1ZMSPRn9x0I=",
-		"package_name":"com.huawei.photoplaza.agc"
+		"cp_id":"70086000307977604",
+		"product_id":"736430079245980367",
+		"client_id":"706205904600563712",
+		"client_secret":"B4E3704E44B0877A85D4344283F98546E122EAC94A349079A224FEDDB03F85B8",
+		"project_id":"736430079245980367",
+		"app_id":"104686789",
+		"api_key":"CwEAAAAABFPL467BWOgz32s8u0Kw0mQ4Z3t3PGyUG8Tz3ys9HTnAYYBtb4I/bFB6auy7Dj+ypO35WOajnkldhD6v9kSHeGTo0/s=",
+		"package_name":"com.huawei.agc.photoplaza"
 	},
 	"oauth_client":{
-		"client_id":"104635315",
+		"client_id":"104686789",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"104635315",
-		"package_name":"com.huawei.photoplaza.agc"
+		"app_id":"104686789",
+		"package_name":"com.huawei.agc.photoplaza"
 	},
 	"service":{
 		"analytics":{
-			"collector_url":"datacollector-dra.dt.hicloud.com,datacollector-dra.dt.dbankcloud.cn",
+			"collector_url":"datacollector-drcn.dt.hicloud.com,datacollector-drcn.dt.dbankcloud.cn",
+			"collector_url_ru":"datacollector-drru.dt.hicloud.com,datacollector-drru.dt.dbankcloud.cn",
+			"collector_url_sg":"datacollector-dra.dt.hicloud.com,datacollector-dra.dt.dbankcloud.cn",
+			"collector_url_de":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"collector_url_cn":"datacollector-drcn.dt.hicloud.com,datacollector-drcn.dt.dbankcloud.cn",
 			"resource_id":"p1",
 			"channel_id":""
 		},
 		"search":{
-			"url":"https://search-dra.cloud.huawei.com"
+			"url":"https://search-drcn.cloud.huawei.com"
 		},
 		"cloudstorage":{
-			"storage_url":"https://ops-dra.agcstorage.link",
-			"default_storage":"photo-7iawi"
+			"storage_url":"https://agc-storage-drcn.platform.dbankcloud.cn",
+			"default_storage":"agcphoto-nkacg"
 		},
 		"ml":{
-			"mlservice_url":"ml-api-dra.ai.dbankcloud.com,ml-api-dra.ai.dbankcloud.cn"
+			"mlservice_url":"ml-api-drcn.ai.dbankcloud.com,ml-api-drcn.ai.dbankcloud.cn"
 		}
 	},
-	"region":"SG",
+	"region":"CN",
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
-			"package_name":"com.huawei.photoplaza.agc",
+			"package_name":"com.huawei.agc.photoplaza",
 			"client":{
-				"app_id":"104635315"
+				"app_id":"104686789"
 			},
 			"app_info":{
-				"package_name":"com.huawei.photoplaza.agc",
-				"app_id":"104635315"
+				"package_name":"com.huawei.agc.photoplaza",
+				"app_id":"104686789"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"104635315"
+				"client_id":"104686789"
 			}
 		}
 	]

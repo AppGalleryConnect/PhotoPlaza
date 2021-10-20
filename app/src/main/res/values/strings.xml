@@ -33,5 +33,7 @@
     <string name="register_error">RegisterFailed</string>
     <string name="empty_error">Please fill in the information</string>
     <string name="exit_app">Press again to exit the App</string>
+    <string name="share_text">每成功邀请一个用户注册，您和受邀用户均可获得10元礼品卷</string>
+    <string name="share_text2">您可以分享以下链接到社交媒体以邀请好友</string>
 
 </resources>

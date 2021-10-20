@@ -1,28 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.huawei.photoplaza.agc">
+    package="com.huawei.agc.photoplaza">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
 
     <application
-        android:name="MainApplication"
+        android:name=".MainApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_photoplaza"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_photoplaza"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <meta-data
             android:name="com.huawei.agconnect.applinking.READ_CLIPBOARD_PERMISSION"
-            android:value="Available"/>
+            android:value="Available" />
         <meta-data
             android:name="apms_debug_log_enabled"
-            android:value="true" />
+            android:value="false" />
 
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!-- DeepLink方式 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 此处添加项目中自定义的域名 -->
+                <data android:host="photoplaza.com" android:scheme="share"/>
+                <data android:host="photoplaza.com" android:scheme="invite"/>
+            </intent-filter>
+
+            <!-- AppLinks方式 -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 此处添加AppLinking的链接前缀 -->
+                <data android:host="photoagc.drcn.agconnect.link" android:scheme="http"/>
+                <data android:host="photoagc.drcn.agconnect.link" android:scheme="https"/>
+            </intent-filter>
+
         </activity>
 
         <activity android:name=".ImageListActivity" />
@@ -30,16 +67,18 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ImageListActivity" />
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <!-- 此处添加项目中自定义的域名 -->
-                <data android:host="photoplaza.agc.com" android:scheme="photo"/>
-            </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".PersonalDetailActivity"/>
+
+        <activity android:name=".RegisterActivity">
+        </activity>
+
+        <activity android:name=".PersonalDetailActivity" >
+        </activity>
+
+        <activity android:name=".InviteActivity">
+
+        </activity>
+
         <service
             android:name=".model.MyPushService"
             android:exported="false">
@@ -49,16 +88,4 @@
         </service>
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
-        tools:ignore="ProtectedPermissions" />
-    <supports-screens
-        android:smallScreens="true"
-        android:normalScreens="true"
-        android:largeScreens="true"
-        android:resizeable="true"
-        android:anyDensity="true"/>
 </manifest>

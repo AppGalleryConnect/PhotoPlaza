@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:orientation="horizontal"
+    android:weightSum="8">
+
+    <TextView
+        android:id="@+id/invite_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/effective_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:singleLine="true" />
+
+</LinearLayout>

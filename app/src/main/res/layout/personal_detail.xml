@@ -18,7 +18,62 @@
             android:layout_marginTop="25dp"
             android:layout_marginLeft="10dp"
             android:src="@mipmap/back_btn" />
+
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/invite_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+        <TextView
+            android:id="@+id/invite_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="邀请有礼"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/balance_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/table_underline"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" >
+
+        <TextView
+            android:id="@+id/balance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/coupons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -62,7 +117,7 @@
             android:gravity="center|left"/>
     </LinearLayout>
 
-    <com.huawei.photoplaza.agc.viewAndAdapter.CircleImageView
+    <com.huawei.agc.photoplaza.viewAndAdapter.CircleImageView
         android:id="@+id/roundImageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -75,14 +130,41 @@
         android:src="@mipmap/ic_user"
         />
 
+
     <androidx.recyclerview.widget.RecyclerView
-     android:id="@+id/personalPhotoRecyclerView"
-     android:layout_width="match_parent"
-     android:layout_height="0dp"
-     android:layout_marginTop="10dp"
-     android:layout_weight="1"
-     app:layout_constraintBottom_toBottomOf="parent"
-     app:layout_constraintTop_toBottomOf="@id/linearLayout"
-     />
+        android:id="@+id/personalPhotoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/deleteUser_layout"
+        app:layout_constraintTop_toBottomOf="@id/balance_Layout"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/deleteUser_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        >
+        <Button
+            android:id="@+id/delete_btn"
+            android:background="@drawable/selector_login"
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:stateListAnimator="@null"
+            android:text="注销账号"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
