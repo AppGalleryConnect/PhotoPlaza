@@ -91,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity
         couponPrice = AppLinkingAction.parseLink(deepLink).get("CouponPrice");
         TextView show_invite = findViewById(R.id.invite_userName);
         show_invite.setVisibility(View.VISIBLE);
-        show_invite.setText("邀请人：" + inviteUserName);
+        show_invite.setText(getString(R.string.invate_person, inviteUserName));
         mHandler.post(() -> {
             couponDBAction = new CouponDBAction();
             couponDBAction.addCallBacks(RegisterActivity.this);
@@ -172,7 +172,7 @@ public class RegisterActivity extends AppCompatActivity
                 bundleEvent.putString("exam_time", name);
                 instance.onEvent("AuthSuccess", bundleEvent);
             } else {
-                ToastUtils.showToast(this, "匿名登录，仅用于测试");
+                ToastUtils.showToast(this, getString(R.string.anonymous_test));
             }
         }
         data = new Bundle();
@@ -211,7 +211,7 @@ public class RegisterActivity extends AppCompatActivity
     @Override
     public void onUpsertCoupon(Integer cloudDBZoneResult) {
         Log.i(TAG, "UpsertSuccess " + cloudDBZoneResult + " records");
-        ToastUtils.showToast(this, "注册成功，代金券已到账 ");
+        ToastUtils.showToast(this, getString(R.string.signup_success));
         Intent intent = new Intent(RegisterActivity.this, ImageListActivity.class);
         intent.putExtras(data);
         startActivity(intent);
@@ -241,6 +241,6 @@ public class RegisterActivity extends AppCompatActivity
 
     @Override
     public void onSendVerify(VerifyCodeResult verifyCodeResult) {
-        ToastUtils.showToast(this, "验证码发送成功");
+        ToastUtils.showToast(this, getString(R.string.verifycode_success));
     }
 }

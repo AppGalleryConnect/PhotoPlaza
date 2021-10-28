@@ -35,5 +35,16 @@
     <string name="exit_app">再按一次退出应用</string>
     <string name="share_text">每成功邀请一个用户注册，您和受邀用户均可获得10元礼品卷</string>
     <string name="share_text2">您可以分享以下链接到社交媒体以邀请好友</string>
+    <string name="invate_person">邀请人：%s </string>
+    <string name="anonymous_test">匿名登录，仅用于测试</string>
+    <string name="signup_success">注册成功，代金券已到账</string>
+    <string name="verifycode_success">验证码发送成功</string>
+    <string name="comfirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="signoff_content">确定注销并且离开我们吗？</string>
+    <string name="signoff_comfirm">注销确认</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="coupon_total">礼品券: %d元</string>
+    <string name="balance_amout">余额： 0.0元</string>
 
 </resources>

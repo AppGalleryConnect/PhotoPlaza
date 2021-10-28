@@ -33,7 +33,18 @@
     <string name="register_error">RegisterFailed</string>
     <string name="empty_error">Please fill in the information</string>
     <string name="exit_app">Press again to exit the App</string>
-    <string name="share_text">每成功邀请一个用户注册，您和受邀用户均可获得10元礼品卷</string>
-    <string name="share_text2">您可以分享以下链接到社交媒体以邀请好友</string>
+    <string name="share_text">For each successful invitation to register, you and the invited user will receive a ￥10 gift </string>
+    <string name="share_text2">You can share the following links to social media to invite friends</string>
+    <string name="invate_person">Invited by: %s</string>
+    <string name="anonymous_test">Anonymous sign in, test only</string>
+    <string name="signup_success">Sign up success, the coupon has been received.</string>
+    <string name="verifycode_success">The verification code is sent successfully.</string>
+    <string name="comfirm">Comfirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="signoff_content">Are you sure you want to log off and leave us?</string>
+    <string name="signoff_comfirm">Log off comfirm</string>
+    <string name="password_empty">Password cannot be empty</string>
+    <string name="coupon_total">Coupon: ￥%d</string>
+    <string name="balance_amout">Balance: ￥0.0</string>
 
 </resources>

@@ -186,14 +186,14 @@ public class PersonalDetailActivity extends AppCompatActivity
         }
         if (view.getId() == R.id.delete_btn) {
             AlertDialog.Builder deleteUserConfirm = new AlertDialog.Builder(this);
-            deleteUserConfirm.setPositiveButton("确认", (arg0, arg1) -> {
+            deleteUserConfirm.setPositiveButton(getString(R.string.comfirm), (arg0, arg1) -> {
                 createPayDialog();
             });
-            deleteUserConfirm.setNegativeButton("取消", (arg0, arg1) -> {
+            deleteUserConfirm.setNegativeButton(R.string.cancel, (arg0, arg1) -> {
                 arg0.dismiss();
             });
-            deleteUserConfirm.setMessage("确定注销并且离开我们吗？");
-            deleteUserConfirm.setTitle("注销确认");
+            deleteUserConfirm.setMessage(getString(R.string.signoff_content));
+            deleteUserConfirm.setTitle(getString(R.string.signoff_comfirm));
             deleteUserConfirm.show();
         }
     }
@@ -201,7 +201,7 @@ public class PersonalDetailActivity extends AppCompatActivity
         final AuthDeleteDialog authDeleteDialog = new AuthDeleteDialog(this);
          authDeleteDialog.setPasswordCallback(password -> {
              if ("".equals(password)) {
-                 Toast.makeText(this, "密码不能为空", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(this, getString(R.string.password_empty), Toast.LENGTH_SHORT).show();
              } else {
                  String Account = UtilTool.loginAccount;
                  AGConnectUser user = AGConnectAuth.getInstance().getCurrentUser();
@@ -215,7 +215,7 @@ public class PersonalDetailActivity extends AppCompatActivity
                      finish();
                  }).addOnFailureListener(e->{
                      Log.e(TAG,"reAuthenticate failure" + e.getMessage());
-                     Toast.makeText(this, "密码错误，请重试", Toast.LENGTH_SHORT).show();
+                     Toast.makeText(this, getString(R.string.account_error), Toast.LENGTH_SHORT).show();
                  });
              }
          });
@@ -288,9 +288,9 @@ public class PersonalDetailActivity extends AppCompatActivity
         Log.d(TAG, "couponAll： " + couponSum);
         if (count == 2) {
             TextView allCoupons = findViewById(R.id.coupons_text);
-            allCoupons.setText("礼品券：" + couponSum + "元");
+            allCoupons.setText( getString(R.string.coupon_total, couponSum));
             TextView allBalance = findViewById(R.id.balance_text);
-            allBalance.setText("余额： 0.0元");
+            allBalance.setText(getString(R.string.balance_amout));
         }
     }
 

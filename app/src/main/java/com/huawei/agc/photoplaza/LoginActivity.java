@@ -281,7 +281,7 @@ public class LoginActivity extends AppCompatActivity implements AuthLoginAction.
             ToastUtils.showToast(this, getResources().getString(R.string.login_success));
         } else {
             name = this.getString(R.string.anonymous_user) + uid.substring(14, 18);
-            ToastUtils.showToast(this, "匿名登录，仅用于测试");
+            ToastUtils.showToast(this, getString(R.string.anonymous_test));
         }
         Bundle data = new Bundle();
         data.putString("UserName", name);
