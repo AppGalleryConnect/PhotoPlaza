@@ -44,7 +44,7 @@
     <string name="signoff_content">Are you sure you want to log off and leave us?</string>
     <string name="signoff_comfirm">Log off comfirm</string>
     <string name="password_empty">Password cannot be empty</string>
-    <string name="coupon_total">Coupon: ￥%d</string>
+    <string name="coupon_total">Coupon: ￥%.1f</string>
     <string name="balance_amout">Balance: ￥0.0</string>
 
 </resources>

@@ -44,7 +44,7 @@
     <string name="signoff_content">确定注销并且离开我们吗？</string>
     <string name="signoff_comfirm">注销确认</string>
     <string name="password_empty">密码不能为空</string>
-    <string name="coupon_total">礼品券: %d元</string>
+    <string name="coupon_total">礼品券: %.1f元</string>
     <string name="balance_amout">余额： 0.0元</string>
 
 </resources>

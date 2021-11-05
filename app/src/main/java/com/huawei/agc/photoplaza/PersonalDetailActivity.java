@@ -61,7 +61,7 @@ public class PersonalDetailActivity extends AppCompatActivity
     private CommentDBAction commentDBAction;
     private CouponDBAction couponDBAction;
     private double couponSum;
-    private int count;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +118,7 @@ public class PersonalDetailActivity extends AppCompatActivity
         inviteBtn.setOnClickListener(PersonalDetailActivity.this);
         Button deleteBtn = findViewById(R.id.delete_btn);
         deleteBtn.setOnClickListener(PersonalDetailActivity.this);
+        Log.d(TAG, "UtilTool.LoginMod: " + UtilTool.LoginMod);
         if(UtilTool.LoginMod == 11){
             deleteBtn.setVisibility(View.VISIBLE);
         }
@@ -287,8 +288,12 @@ public class PersonalDetailActivity extends AppCompatActivity
         }
         Log.d(TAG, "couponAll： " + couponSum);
         if (count == 2) {
+            // show the coupons
             TextView allCoupons = findViewById(R.id.coupons_text);
-            allCoupons.setText( getString(R.string.coupon_total, couponSum));
+            String AllStringData = getResources().getString(R.string.coupon_total);
+            String couponTotalString = String.format(AllStringData, couponSum);
+            allCoupons.setText(couponTotalString);
+            // show all balance
             TextView allBalance = findViewById(R.id.balance_text);
             allBalance.setText(getString(R.string.balance_amout));
         }
